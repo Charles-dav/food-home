@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    color: #000;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+    font-weight: 300;
+}
+
+/*-----------------------------------------------*/
+/* REUSEABLE CODE*/
+/*-----------------------------------------------*/
+
+.clearfix {zoom: 1;}
+.clearfix:after{
+    content: " ";
+    display: table;
+    clear: both;
+    visibility: hidden;
+}
+
+section{
+    padding: 80px 0;
+}
+.main-span{
+    color: rgb(245, 20, 80);
+    font-size: 130%;
+    font-weight: 700;
+}
+
+.box{
+    margin: 0 3%;
+}
+p{
+    font-weight: 400;
+}
+/*-----------------------------------------------*/
+/* HEADINGS*/
+/*-----------------------------------------------*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/pizza-one.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+#header-container{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    margin: 0;
+    font-size: 390%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    width: 100%;
+}
+
+h2{
+    font-size: 150%;
+    word-spacing: 4px;
+}
+h3{
+    font-size: 100%;
+    margin-top: 10px;
+}
+h4{
+    font-size: 95%;
+}
+h5{
+    font-size: 110%;
+    color: rgb(214, 12, 66);
+    margin: 15px 0;
+    word-spacing: 3px;
+}
+
+.header-paragraph{
+    font-size: 100%;
+    font-weight: 300;
+    margin: 19px 0;
+    word-spacing: 2px;
+}
+
+.btn:link,
+.btn:visited,
+input[type="submit"]{
+    padding: 7px 40px;
+    border-radius: 5px;
+    transition: background-color 0.4s;
+    font-weight: 300;
+}
+
+.btn-active:link,
+.btn-active:visited,
+input[type="submit"]{
+    background-color: rgb(245, 20, 80);
+    color: #fff;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: rgb(214, 12, 66);
+}
+
+.icon-header{
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+
+/*-------------- NAVIGATION BAR---------------*/
+
+.brand-logo{
+    font-size: 400%;
+    color: #fff;
+    float: left;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.main-nav .active{
+    border-bottom: 2px solid rgb(245, 20, 80);
+    padding-bottom: 10px;
+}
+
+.main-nav li{
+    padding: 5px;
+    display: inline-block;
+    margin: 0 10px;
+}
+.main-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 97%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.4s;
+    padding-bottom: 10px;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid rgb(245, 20, 80);
+    padding-bottom: 10px;
+}
+
+/*-----------------------------------------------*/
+/* ABOUT US SECTION*/
+/*-----------------------------------------------*/
+
+.show-box:first-child{
+    padding: 5%;
+    font-size: 100%;
+}
+
+.show-box:last-child{
+    padding: 2%;
+}
+
+.long-paragraph{
+    line-height: 145%;
+    font-weight: 300;
+    font-size: 97%;
+}
+.pizza-image{
+    margin-top: 35px;
+    text-align: center;
+    width: 100%;
+}
+
+/*-----------------------------------------------*/
+/* MENU SECTION*/
+/*-----------------------------------------------*/
+
+.section-menu{
+    background-color: #fafafa;
+}
+.meal-box{
+    background-color: #fff;
+    padding: 2%;
+    box-shadow: 0 2px 5px rgb(228, 228, 228);
+    height: 100%;
+}
+.meal-box div{
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+.meal-btn{
+    text-align: center;
+}
+.scale-image {
+    transform: scale(1.2);
+    width: 100%;
+    transition: transform 0.6s, opacity 0.6s;
+}
+
+.scale-image:hover{
+    transform: scale(1);
+}
+
+/*-----------------------------------------------*/
+/* CHEF SECTION*/
+/*-----------------------------------------------*/
+
+.chef-container{
+    list-style: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #000;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+figure{
+    margin-bottom: 5px;
+}
+.chef-image-box img{
+    opacity: 0.7;
+    transition: opacity 0.5s;
+}
+.chef-image-box img:hover{
+    opacity: 1;
+}
+.chef-name{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*-----------------------------------------------*/
+/* TESTIMONIALS SECTION*/
+/*-----------------------------------------------*/
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/banner\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#main-container{
+    color: #fff;
+}
+.show-box{
+    background-color: #fff;
+}
+cite{
+    display: block;
+    margin: 20px auto;
+}
+
+cite img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+blockquote{
+    font-size: 80%;
+    text-align: center;
+    padding: 0 15%;
+    line-height: 160%;
+}
+
+/*-----------------------------------------------*/
+/* FORM SECTION*/
+/*-----------------------------------------------*/
+.tomato-img{
+    transform: rotate(10deg);
+    width: 95%;
+    padding-left: 60px
+}
+.main-lable{ width: 100%;}
+
+#form{
+    box-shadow: 0 2px 5px rgb(228, 228, 228);
+    width: 500px;
+    padding: 7%;
+}
+
+#form input[type="text"],
+input[type="email"],
+textarea,
+select{
+    outline: none;
+    border-radius: 3px;
+    padding: 7px;
+    font-weight: 300;
+    width: 100%;
+    border: 1px solid rgb(175, 175, 175);
+    margin: 5px 0;
+    color: rgb(77, 76, 76);
+}
+
+#checkbox{
+    margin-right: 7px;
+}
+
+/*-----------------------------------------------*/
+/*  FOOTER SECTION*/
+/*-----------------------------------------------*/
+
+footer{
+    background-color: #000;
+    height: 100%;
+    color: #fff;
+}
+footer div{
+    display: block;
+}
+footer h4, h6{
+    color: rgb(214, 12, 66);
+    font-weight: 400;
+}
+footer h5 {
+    color: #fff;
+    font-size: 90%;
+}
+footer p{
+    font-weight: 300;
+    font-size: 80%;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    font-size: 90%;
+    margin: 5px 0;
+}
+footer ul li a{
+    color: #fff;
+    transition: color 0.2s;
+}
+footer ul li a:hover{
+    text-decoration: none;
+    color: #007bff;
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+footer input[type="email"]{
+    padding-left: 45px;
+    font-size: 80%;
+}
+.contact-us{
+    font-size: 90%;
+}
+.brand{
+    font-size: 300%;
+    display: block;
+}
+.input-icons i { 
+    position: absolute; 
+    color: #000;
+    padding: 8px 15px; 
+}
+.input-icons { 
+    width: 100%; 
+} 
+
+.social-icon-box{
+    border-top: 2px solid #fff;
+}
+
+.social-icon li{
+    display: inline-block;
+    margin: 0 5px;
+    background-color: rgb(214, 12, 66);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-top: 7px;
+    padding-left: 7px;
+    text-align: center;
+}
+.social-icon li a i{
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.social-icon li a i:hover{
+    color: #000;
+}
+
+
+
+
